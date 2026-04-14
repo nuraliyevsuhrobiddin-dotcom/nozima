@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArtAi - San'at Yaratuvchi Platforma</title>
+    <link rel="stylesheet" href="style-new.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">ArtAi</div>
+            <ul class="nav-menu">
+                <li><a href="#home">Bosh sahifa</a></li>
+                <li><a href="#features">Xususiyatlar</a></li>
+                <li><a href="#about">Haqida</a></li>
+                <li><a href="#contact">Aloqa</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="hero" id="home">
+        <div class="hero-container">
+            <h1>Rasmlarni San'atga Aylantiring</h1>
+            <p>Sun'iy intellekt yordamida har qanday rasmni chiroyli badiiy eskizlar va illustrasiyalarga aylantiring</p>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="upload-section">
+            <div class="upload-area" id="uploadArea">
+                <div class="upload-icon">📁</div>
+                <p>Rasmni bu yerga tortib qo'ying yoki <span class="upload-link">tanlang</span></p>
+                <input type="file" id="fileInput" accept="image/*" hidden>
+            </div>
+            <button class="generate-btn" id="generateBtn" disabled>San'at yaratish</button>
+        </div>
+        
+        <div class="preview-section">
+            <h2>Transformatsiya ko'rinishi</h2>
+            <div class="steps">
+                <div class="step" id="step1">
+                    <div class="step-image" id="originalImage"></div>
+                    <p>Asl rasm</p>
+                    <button class="download-btn" id="downloadBtn1" disabled>Yuklab olish</button>
+                </div>
+                <div class="step" id="step2">
+                    <div class="step-image" id="outlineImage"></div>
+                    <p>Yengil eskiz konturi</p>
+                    <button class="download-btn" id="downloadBtn2" disabled>Yuklab olish</button>
+                </div>
+                <div class="step" id="step3">
+                    <div class="step-image" id="detailedImage"></div>
+                    <p>Batafsil chizma</p>
+                    <button class="download-btn" id="downloadBtn3" disabled>Yuklab olish</button>
+                </div>
+                <div class="step" id="step4">
+                    <div class="step-image" id="finalImage"></div>
+                    <p>Yakuniy badiiy illustrasiya</p>
+                    <button class="download-btn" id="downloadBtn4" disabled>Yuklab olish</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Features Section -->
+    <section class="features-section" id="features">
+        <div class="container">
+            <h2>Xususiyatlar</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">✨</div>
+                    <h3>Sun'iy Intellekt</h3>
+                    <p>Eng yangi AI texnologiyasi yordamida rasmlarni sanʼatga aylantiring</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Tez Jarayon</h3>
+                    <p>Daqiqalarda natija oling, sekundlar ichida qayta yangilang</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎨</div>
+                    <h3>Yuqori Sifat</h3>
+                    <p>4K va undan yuqori sifatda rasmlarni transformatsiya qiling</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📥</div>
+                    <h3>Yuklash Imkoni</h3>
+                    <p>Barcha bosqichlarning rasmlarini yuklab oling va saqlang</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔒</div>
+                    <h3>Xavfsizlik</h3>
+                    <p>Sizning rasmlar xavfsiz va maxfiy saqlanadi</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🌐</div>
+                    <h3>Bepul Ishlatish</h3>
+                    <p>Istalgancha marta bepul foydalanish imkoni</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="container">
+            <div class="about-content">
+                <h2>Biz Haqida</h2>
+                <p>ArtAi - bu zamonaviy sun'iy intellekt texnologiyasini ishlatib, har qanday rasmni chiroyli badiiy asarlarga aylantiring. Biz bugungi xamoqalar uchun eng yangi rasm qayta ishlash texnologiylarini birgalikda kelatirdik.</p>
+                <p>Bizning missiyamiz - sun'iy intellekti har kisimnig qo'liga berib, ijodiy qobiliyatlarini ochib berish.</p>
+                <div class="about-stats">
+                    <div class="stat">
+                        <div class="stat-number">10K+</div>
+                        <div class="stat-label">Foydalanuvchi</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">5M+</div>
+                        <div class="stat-label">Transformatsiya</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">24/7</div>
+                        <div class="stat-label">Qo'llab-quvvatlash</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <h2>Aloqa</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">📧</div>
+                        <h3>Email</h3>
+                        <p><a href="mailto:info@artai.com">info@artai.com</a></p>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📱</div>
+                        <h3>Telefon</h3>
+                        <p><a href="tel:+998901234567">+998 (90) 123-45-67</a></p>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">🌍</div>
+                        <h3>Veb-sayt</h3>
+                        <p><a href="https://artai.com" target="_blank">www.artai.com</a></p>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <input type="text" placeholder="Ismingiz" required>
+                    <input type="email" placeholder="Email manzilingiz" required>
+                    <textarea placeholder="Sizning xabari" rows="5" required></textarea>
+                    <button type="submit" class="submit-btn">Yuborish</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    <script src="script-new.js"></script>
+</body>
+</html>
+</body>
+</html>
